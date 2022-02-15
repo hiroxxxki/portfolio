@@ -1,0 +1,529 @@
+* {
+   box-sizing: border-box;
+}
+/*body {
+   margin: 0;
+   padding: 0;
+   background-color: #e6e6e6;
+   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}*/
+
+/* main.search.membershipcancel.profListError.jspのbodyに適用 */
+.main-body{
+	overflow: hidden;
+	 margin: 0;
+   padding: 0;
+   background-color: #e6e6e6;
+   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+.login-body{
+	background-color: #eb6877;
+	 margin: 0;
+   padding: 0;
+   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+   
+}
+
+.scroll-body{
+	margin: 0;
+   padding: 0;
+   background-color: #e6e6e6;
+   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+
+/* header：chatMain.main.match.mypage.searchに適用 */
+header {
+   padding-bottom: 5%;
+   padding: 1% 10%;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: #ffffff;
+   display: flex;
+   align-items: center;
+   font-family: 'Amatic SC', cursive ;
+   z-index: 9999; /* headerを前面に出す*/
+   
+}
+h1 {
+   margin: 0; 
+   padding: 0;
+   font-size: 50px;
+   color: #eb6877;
+}
+
+.header-a {	
+   text-decoration: none;
+   color: #4b4b4b;
+   color: #fff;
+	background-color: #eb6877;
+	border-bottom: 5px solid #eb6877;
+	border-radius: 100vh;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+nav {
+   margin-left:auto;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   display: flex;
+}
+li {
+   margin: 0 0 0 15px;
+   font-size: 12px;
+}
+
+
+
+.searchmypage button{
+	color: #fff;
+	background-color: #eb6877;
+	border-bottom: 5px solid #eb6877;
+	border-radius: 100vh;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	margin-bottom: 2%;
+}
+
+.searchmypage button:hover{
+	margin-top: 3px;
+	border-bottom: 2px solid #eb6877;
+}
+
+.register-button{
+	
+	width:100px;
+	padding: 6px;
+	font-size: 15px;
+}
+
+.create-button{
+	width:100px;
+	padding: 6px;
+	margin-bottom: 5%;
+}
+
+new-button{
+	width: 200px;
+	padding: 5px;
+}
+
+.back-button{
+	font-size: 30px;
+}
+
+.back-button:hover{
+	color : #ffffff;
+	cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+}
+
+
+/*マイページ作成画面css ここから*/
+.new-button{
+	width: 150px;
+	padding: 5px;
+}
+.age-button{
+	width: 50px;
+	padding: 5px;
+}
+.area-button{
+	width: 100px;
+	padding: 5px;
+}
+.hobby-button{
+	width: 150px;
+	padding: 5px;
+}
+.create-button{
+	width:100px;
+	padding: 6px;
+	margin-bottom: 5%;
+}
+
+/*マイページ作成画面 ここまで*/
+
+
+.all{
+	text-align: center;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height : 85vh;
+	position : relative;
+	font-size: 20px;
+}
+
+.new-main{
+	text-align: center;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	position : relative;
+	font-size: 20px;
+}
+
+.boxitem2{
+	align-self: self-end;
+	box-sizing: border-box;
+	width: 95%;
+	padding: 5px;
+}
+.boxitem2 a{		
+	margin-left: auto;
+}
+
+
+.boxitem1{
+	align-self: center;
+	max-width:95%;
+	}	
+	
+
+table {
+	font-size: 20px;
+    
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+th{
+	vertical-align: top;
+	text-align: left;
+	border-bottom: 3px solid #000;
+	display: flex;
+}
+
+/*メインページ*/
+
+
+.mark_hobby{
+	padding: 0em 0.5em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #d5e2f2;
+    border: solid 2px #6091d3;/*線*/
+    border-radius: 5px;/*角の丸み*/
+    display:inline;
+}
+.hobby{
+	padding: 0em 0.5em;
+    color: #000000;/*文字色*/
+    background: #FFF;
+    border: solid 0.5px #000000;/*線*/
+    border-radius: 5px;/*角の丸み*/
+    display:inline;
+}
+
+/*ヘルプページ*/
+.h2{
+	font-size: 50px;
+	margin-top: 10%;
+	text-align: center;
+	margin-top: 10%;
+	color: #000000;
+}
+
+.help-main{
+	text-align: left;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height : 85vh;
+	position : relative;
+	font-size: 20px;
+}
+
+.back{
+	margin-left: 50px;
+	margin-bottom: 100px;
+	font-size: 25px;
+}
+
+.help-h2{
+	text-align: center;
+	color: #000000;
+}
+
+.help-h2:hover{
+	cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+}
+
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	
+}
+
+.help-a1{
+	color: #ffffff;
+	background-color: #FF69B4;
+	text-decoration: none;
+	width: calc(100% / 4);
+   padding: 20px 10px;
+   text-align: center;
+   transition: all 0.2s;
+}
+
+.help-a1:hover{
+	color : #ffffff;
+	cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+	transform: scale(1.3, 1.3);
+}
+
+.help-a2{
+	color: #ffffff;
+	background-color: #FF1493;
+	text-decoration: none;
+	width: calc(100% / 4);
+   padding: 20px 10px;
+   text-align: center;
+   transition: all 0.2s;
+}
+
+.help-a2:hover{
+	color : #ffffff;
+	cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+	transform: scale(1.3, 1.3);
+}
+
+.help-a3{
+	color: #ffffff;
+	background-color: #FF6347;;
+	text-decoration: none;
+	width: calc(100% / 4);
+   padding: 20px 10px;
+   text-align: center;
+   transition: all 0.2s;
+}
+
+.help-a3:hover{
+	color : #ffffff;
+	cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+	transform: scale(1.3, 1.3);
+}
+
+.help-a4{
+	color: #ffffff;
+	background-color: #FF8C00;
+	text-decoration: none;
+	width: calc(100% / 4);
+   padding: 20px 10px;
+   text-align: center;
+   transition: all 0.2s;
+}
+
+.help-a4:hover{
+	color : #ffffff;
+	cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+	transform: scale(1.3, 1.3);
+}
+
+.sample{
+	 display: block;
+   margin-top:-100px;
+   padding-top:100px;
+}
+
+summary {
+  cursor: pointer;
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/arrow-right.svg);
+  font-weight: 700;
+}
+summary::-webkit-details-marker {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/arrow-right.svg) no-repeat center/6px;
+  color: transparent;
+
+}
+details {
+  margin: 14px;
+  padding: 10px;
+  min-height: 10px;
+  transition: .5s;
+}
+details[open] {
+  min-height: 80px;
+  background: #f8c9cf;
+}
+
+img.ofi{
+	width: 50%;
+	height: 50%;
+	margin-bottom: 0%;
+	-o-object-fit: fill;
+	object-fit: fill;
+}
+
+.match button{
+	background-color: #ffffff;
+	border-radius: 10%;
+	font-size: large;
+	position: relative;
+	padding: 0.5rem 0.5rem;
+	cursor: pointer;
+	letter-spacing: 0.1em;
+  	border: 1px dashed #000;
+  	width:30%;
+}
+.image1 {
+	margin-left: 0;
+	vertical-align: bottom;
+}
+.match p{
+	display:inline;
+}
+.boxitem2{
+	align-self: self-end;
+	box-sizing: border-box;
+	width: 95%;
+	padding: 5px;
+}
+
+.search-age{
+	font-size: 16px;
+}
+/*メイン画面の画像のcss ここから*/
+
+/*画像のサイズを統一*/
+img.ofi-hover10{
+	width: 65%;
+	height: 350px;
+	margin: 0%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+/*拡大時の画像表示*/
+.popup-img{
+	width: 75%;
+    height: 90%;
+    margin: 2px;
+    -o-object-fit: fill;
+    object-fit: fill;
+}
+/*メイン画面の画像を拡大する動き*/
+img.ofi-hover10 {
+	transition: all 0.6s ease 0s;
+}
+img.ofi-hover10:hover {
+	cursor: pointer;
+	transform: scale(1.1, 1.1);
+}
+
+/* ポップアップウインドウの設定 */
+.popup {
+  background-color: #fff;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 9% 15% 10% 15%;
+  width: 70vw;
+  height: 60vw;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on:checked + .popup{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+
+/* 開くボタン */
+.btn-open{
+  background: #e6e6e6;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 95%;
+  text-align: center;
+}
+.btn-close{
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 95%;
+  text-align: center;
+}
+/* ポップアップの内容(空白) */
+.popup-content{
+  margin: 8px 0 0 0;
+}
+/*メイン画面の画像のcss ここまで*/
+
+
+
+
+.mark_hobby{
+	padding: 0em 0.5em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #d5e2f2;
+    border: solid 2px #6091d3;/*線*/
+    border-radius: 5px;/*角の丸み*/
+    display:inline;
+}
+.hobby{
+	padding: 0em 0.5em;
+    color: #000000;/*文字色*/
+    background: #FFF;
+    border: solid 0.5px #000000;/*線*/
+    border-radius: 5px;/*角の丸み*/
+    display:inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

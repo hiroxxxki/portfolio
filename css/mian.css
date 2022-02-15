@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+
+/*　startとloginに適用するcss　*/
+
+.start-body{
+	overflow: hidden;
+	/*画面のスクロールなし*/
+	background-position: 0 50%;
+	background-color: #eb6877;
+	font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+.main{
+	position : relative;
+	margin-top: 10%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 25px;
+	
+}
+.main-new{
+	position : relative;
+	margin: auto;
+	margin-top: 10%;
+	text-align: center;
+	font-size: 25px;
+}
+
+/* login画面で使用 */
+.boxitem1{
+	align-self: center;
+	max-width:95%;
+	}	
+
+.pass{
+	margin-left: 1%;
+	
+}
+
+
+/* start画面で使用 */
+.tinder{
+	font-family: 'Caveat', cursive;;
+	font-size: 90px;
+	color: #000000;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+  overflow: hidden
+}
+
+.btn,
+a.btn,
+button.btn {
+	font-family:  "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+
+/*ボタンの色と影*/
+a.btn-white {
+  color: #000;
+  background-color: #ffffff;
+  border-bottom: 5px solid #c8c6c7;
+}
+
+a.btn-white:hover {
+  margin-top: 3px;
+  color: #000;
+  background: #ffffff;
+  border-bottom: 2px solid #c8c6c7;
+}
+
+
+/*背景のグラデーション*/
+.start-body {
+  background: rgb(235,104,119);
+  background: linear-gradient(125deg, rgba(235,104,119,1) 50%, rgba(215,68,255,1) 60%, rgba(255,5,77,1) 80%, rgba(235,104,119,1) 100%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease 3s infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+/*おいておくもの*/
+
+/*login*/
+.boxitem1 PASSWORD {
+	border: none; /* デフォルト枠線を消す */
+	}
+.boxitem1 .pass {
+	border-width: thin;	/* 枠線を目アイコンを含んで引き直す */
+	border-style: solid;
+	width: 200px;
+	display: inline;
+	}

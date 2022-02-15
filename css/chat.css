@@ -1,0 +1,335 @@
+
+.chat-body{
+	overflow: hidden; /*画面のスクロールなし*/
+	 margin: 0;
+   padding: 0;
+   background-color: #e6e6e6;
+   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+
+.talk{
+	background-color : #f2f2f2;
+	height : 85vh;
+	position : relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+	width: 50%;
+	text-align: right;
+	font-size: 14px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	
+}
+#talk_name{
+	background-color : #eb6877;
+	font-size: 20px;
+ 	height: 5vh;
+ 	width: 100%;
+ 	text-align: center;
+    position: -webkit-sticky; 
+    position:sticky; 
+    /* Safari用 *//* 要素をスクロールに応じて固定 */
+    top:0; /* 縦スクロールに追従 */
+    z-index: 100; /* z-indexで最前面に持ってくる */
+}
+
+
+
+
+/*
+.scroll{
+	width: 50%; 
+	height: 80vh; 
+	background-color:#f2f2f2 ;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	overflow-x: hidden;	
+	
+	overflow-y: scroll;
+	
+	padding: 25px;
+	width: 300px;
+	height: 200px;
+}*/
+
+
+
+/*チャット相手の名前表示*/
+/* 上部固定させるためのCSS */
+/*
+#header{
+	background: #ff8c8c;
+  padding: 10px;
+  text-align: center;
+  font-size: 150%;
+	height: 6vh;
+	display:inline-block;
+	width: 100%;
+	position: sticky;
+	top: 10px
+	
+}
+*/
+
+/*
+.all_right{
+	text-align: right;
+	display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 480px;
+  margin: 10px 10px;
+  
+}
+
+
+.message-right {
+	display: inline-block;
+	margin: 10px 0;
+	text-align: left;
+}
+.message-right p {
+  display: inline-block;
+  position: relative; 
+  margin: 0 10px 0 0;
+  padding: 8px;
+  max-width: 350px;
+  border-radius: 12px;
+  background: #ffd2d2;
+  font-size: 15px;
+
+}
+.message-right p:after {
+  content: "";
+  position: absolute;
+  top: 3px; 
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid #ffd2d2;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}*/
+
+.time-right{
+	content: '';
+	align-self: flex-end;
+  display: inline- block;
+  width: 80%;
+  text-align: right;
+  left: -30px;
+  font-size: 80%;
+  color: #000000;
+}
+
+ 
+
+/*相手チャット*/
+/*
+.all-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 500px;
+  margin: 10px 10px;
+  
+}
+
+.all-left .faceicon {
+  padding-right: 3%;
+  width: 12%;
+}
+
+.all-left img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.message {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  max-width: 300px;
+  padding: 8px;
+  border-radius: 12px;
+  background: #f0f0f0;
+  font-size: 15px;
+  
+  
+}
+
+.message:after {
+  content: "";
+  position: absolute;
+  top: 3px; 
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #f0f0f0;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+  
+.message p {
+  margin: 0;
+  padding: 0;
+  
+}*/
+
+
+.date{
+	text-align: center;
+	
+}
+#send {
+    background-color:#f2f2f2;/*タイムラインの色と同じにする*/
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    height: 4vh;
+    padding: 4px;
+    width: 50%;
+    position:fixed;
+    margin-left:auto;
+	margin-right:auto;
+	margin-bottom:15px;
+    bottom: 0; /* 縦スクロールに追従 */
+    z-index: 100; /* z-indexで最前面に持ってくる */
+}
+
+#text{
+        width: calc(100% - 75px);/*常に送信ボタンの横幅を引いたサイズに動的に計算*/
+        line-height: 16px;
+        height: 4vh;
+        padding: 14px 6px 0px 6px;/*文字がテキストエリアの中心になる様に隙間調整*/
+        border: 1px solid #ccc;
+        border-radius: 4px;/*角丸*/
+        text-align: left;/*文字を左寄せ*/
+        box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2) inset;/*内側に影を入れてテキストエリアらしくした*/
+        box-sizing: border-box;/*paddingとborderの要素の高さと幅の影響をなくす（要素に高さと幅を含める）*/
+
+    }
+     #send_btn {
+        width: 72px;
+        height: 4vh;
+        font-size: 16px;
+        line-height: 3em;
+        float: right;/*bms_sendに対して右寄せ*/
+        color: #fff;
+        font-weight: bold;
+        background: #bcbcbc;
+        text-align: center;/*文字をボタン中央に表示*/
+        border: 1px solid #bbb;
+        border-radius: 4px;/*角丸*/
+        box-sizing: border-box;/*paddingとborderの要素の高さと幅の影響をなくす（要素に高さと幅を含める）*/
+    }
+    #send_btn:hover {
+        background:  #eb6877; /*マウスポインタを当てた時にアクティブな色になる*/
+        cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+    }
+
+
+
+
+.time_left{
+  display: inline-block;
+  
+  font-size: 80%;
+  color: #000000;
+}
+
+/**************************************************************************/
+
+
+/*以下、②左側のコメント*/
+.balloon6 {
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.balloon6 .faceicon {
+  float: left;
+  margin-right: -50px;
+  width: 40px;
+}
+
+.balloon6 .faceicon img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.balloon6 .chatting {
+  width: 100%;
+  text-align: left;
+}
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 0 0 0 50px;
+  padding: 10px;
+  max-width: 400px;
+  border-radius: 12px;
+  background: #ffffff;
+  text-align:left;
+  word-break: break-all;
+  
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px; 
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #ffffff;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+/*以下、③右側の緑コメント*/
+.mycomment {
+  margin: 10px 0;
+}
+.mycomment p {
+  display: inline-block;
+  position: relative; 
+  margin: 0 10px 0 0;
+  padding: 8px;
+  max-width: 400px;
+  border-radius: 12px;
+  background: #fedae2;
+  font-size: 15px;
+  text-align:left;
+  word-break: break-all;
+}
+
+.mycomment p:after {
+  content: "";
+  position: absolute;
+  top: 3px; 
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid  #fedae2;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+
+/**************************************************************************/
+
+.msg{
+	max-width:300px;
+}
+
+
+/*.allmessage{}*/
+
+
